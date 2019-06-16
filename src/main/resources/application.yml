@@ -1,0 +1,5 @@
+hibernate:
+    format_sql: true # <<<<<<< ADD THIS <<<<<<<
+    cache:
+        queries: false
+        use_second_level_cache: true
