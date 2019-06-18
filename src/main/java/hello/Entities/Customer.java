@@ -1,11 +1,17 @@
 package hello.Entities;
 
+import lombok.Builder;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import java.util.Objects;
 
+@Builder
 @Entity
 public class Customer {
 
@@ -14,6 +20,11 @@ public class Customer {
     private Long id;
     private String firstName;
     private String lastName;
+
+    @ManyToOne
+    @JoinColumn(name = "idDog")
+    private Dog dog;
+
 
     protected Customer(){}
 
@@ -46,13 +57,21 @@ public class Customer {
         this.lastName = lastName;
     }
 
+    public Dog getDog() {
+        return dog;
+    }
+
+    public void setDog(Dog dog) {
+        this.dog = dog;
+    }
+
     @Override
     public String toString() {
         return "Customer{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", dog=" + dog +
                 '}';
     }
-
 }

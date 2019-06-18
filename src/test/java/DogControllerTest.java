@@ -29,7 +29,7 @@ public class DogControllerTest {
 
     @Test
     public void shouldDogsController() throws Exception {
-        this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk());
+        this.mockMvc.perform(get("/dogs")).andDo(print()).andExpect(status().isOk());
               /*  .andExpect(content().string(containsString("Greetings from Spring Boot!")));*/
     }
 

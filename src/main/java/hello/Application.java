@@ -49,22 +49,35 @@ public class Application {
 
             log.info("Dog Controller Test");
             dogRepository.save(new Dog("Guuu",13));
-            dogRepository.save(new Dog("Guuu",15));
-            dogRepository.save(new Dog("Guuu",16));
-            dogRepository.save(new Dog("Guuu",17));
-            dogRepository.save(new Dog("Guuu",18));
+            dogRepository.save(new Dog("Yeda",15));
+            dogRepository.save(new Dog("Pandu",16));
+            dogRepository.save(new Dog("Fizu",17));
+            dogRepository.save(new Dog("Pashu",18));
 
             log.info("findAll -> Dogs");
             Iterable<Dog> dogsAll=dogRepository.findAll();
             System.out.println(dogsAll);
             List<Dog>convertedList=toList(dogsAll);
             System.out.println(convertedList);
+            loopThroughList(convertedList);
+
+            log.info("findByid -> Dogs");
+            Optional<Dog> a=dogRepository.findById(6L);
+            if (a.isPresent()) {
+                System.out.println(a);
+            }
+
+
         };
 
     }
     public static <T> List<Dog> toList(final Iterable<Dog> iterable) {
         return StreamSupport.stream(iterable.spliterator(), false)
                 .collect(Collectors.toList());
+    }
+
+    public void loopThroughList(List<Dog> convertedlist){
+        convertedlist.stream().forEach(d-> System.out.println(d.getName()));
     }
 
 

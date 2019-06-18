@@ -4,14 +4,15 @@ package hello.Entities;
 import lombok.Builder;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 
 @Entity
 public class Dog {
     @Id
-    @GeneratedValue
-    private long id;
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private long idDog;
     private String name;
     private int age;
 
@@ -22,12 +23,12 @@ public class Dog {
         this.age = age;
     }
 
-    public long getId() {
-        return id;
+    public long getIdDog() {
+        return idDog;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setIdDog(long idDog) {
+        this.idDog = idDog;
     }
 
     public String getName() {
@@ -48,7 +49,7 @@ public class Dog {
 
     public Dog getDogDetails(Dog dog){
         Dog dog1=new Dog();
-        dog1.setId(dog.getId());
+        dog1.setIdDog(dog.getIdDog());
         dog1.setAge(dog.getAge());
         dog1.setName(dog.getName());
         return dog;
