@@ -12,9 +12,9 @@ import java.util.Optional;
 @Component
 public class DogsService {
     @Autowired
-    DogRepository dogRepository;
+    private DogRepository dogRepository;
 
-    public void delete(long id){
+    public void delete(Long id){
         dogRepository.deleteById(id);
     }
 
@@ -23,9 +23,20 @@ public class DogsService {
         return (List<Dog>) dogRepository.findAll();
     }
 
-    public Optional<Dog> findById(long id) throws DogNotFoundException {
-        Optional<Dog>dog;
-        return dog=Optional.ofNullable(findById(id).orElseThrow(new DogNotFoundException("Id not found:" + id)));
+    public List<Dog> findById(Long id) throws DogNotFoundException {
+        List<Dog> dog=dogRepository.findDogByIdDog(id);
+        if (dog!=null){
+            return dog;
+        }
+        return null;
+    }
+
+    public List<Dog> findByAge(Integer age)throws DogNotFoundException{
+        List<Dog> dog=dogRepository.findDogByAge(age);
+        if (dog!=null){
+            return dog;
+        }
+        return null;
     }
 
     public Object save(Dog dogToO) {

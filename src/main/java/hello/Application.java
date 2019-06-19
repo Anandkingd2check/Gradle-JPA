@@ -54,6 +54,7 @@ public class Application {
             dogRepository.save(new Dog("Fizu",17));
             dogRepository.save(new Dog("Pashu",18));
 
+
             log.info("findAll -> Dogs");
             Iterable<Dog> dogsAll=dogRepository.findAll();
             System.out.println(dogsAll);
@@ -62,12 +63,16 @@ public class Application {
             loopThroughList(convertedList);
 
             log.info("findByid -> Dogs");
-            Optional<Dog> a=dogRepository.findById(6L);
-            if (a.isPresent()) {
+            List<Dog> a=dogRepository.findDogByIdDog(6L);
+            if (a!=null) {
                 System.out.println(a);
             }
 
-
+            log.info("findDogByAge");
+            List<Dog> b=dogRepository.findDogByAge(13);
+            if (b!=null){
+                System.out.println(b);
+            }
         };
 
     }

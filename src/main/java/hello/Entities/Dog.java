@@ -12,7 +12,7 @@ import javax.persistence.Id;
 public class Dog {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private long idDog;
+    private Long idDog;
     private String name;
     private int age;
 
@@ -23,11 +23,11 @@ public class Dog {
         this.age = age;
     }
 
-    public long getIdDog() {
+    public Long getIdDog() {
         return idDog;
     }
 
-    public void setIdDog(long idDog) {
+    public void setIdDog(Long idDog) {
         this.idDog = idDog;
     }
 
@@ -54,6 +54,4 @@ public class Dog {
         dog1.setName(dog.getName());
         return dog;
     }
-
-
 }
