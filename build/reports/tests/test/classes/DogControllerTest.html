@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.337s</div>
+<div class="counter">0.581s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">shouldDogsController</td>
-<td>0.284s</td>
+<td>0.493s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldReturnDefaultMessage</td>
-<td>0.053s</td>
+<td>0.088s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,26 +92,26 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>15:01:54.606 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class DogControllerTest]
-15:01:54.636 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-15:01:54.672 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-15:01:54.828 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [DogControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-15:01:54.894 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [DogControllerTest], using SpringBootContextLoader
-15:01:54.909 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [DogControllerTest]: class path resource [DogControllerTest-context.xml] does not exist
-15:01:54.913 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [DogControllerTest]: class path resource [DogControllerTestContext.groovy] does not exist
-15:01:54.914 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [DogControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-15:01:55.185 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [DogControllerTest]
-15:01:55.728 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [DogControllerTest]: using defaults.
-15:01:55.730 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-15:01:55.959 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6abb1852, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@29ae4b1c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@41ebb6e5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3e55360c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@c1ed01c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@57339c28, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4b7354b5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5c81ee81, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@26654b3d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6d7c4105, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3c7b76e3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6fdd620b]
-15:01:55.972 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [DogControllerTest]
-15:01:55.975 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [DogControllerTest]
-15:01:55.978 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [DogControllerTest]
-15:01:55.978 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [DogControllerTest]
-15:01:56.004 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@39762937 testClass = DogControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@978240f testClass = DogControllerTest, locations = '{}', classes = '{class hello.Application, class hello.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e8512, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@75cd175a, [ImportsContextCustomizer@15b7b39d key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2360848d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1771db77, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@764788c6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
-15:01:56.009 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [DogControllerTest]
-15:01:56.010 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [DogControllerTest]
-15:01:56.136 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+<pre>22:13:31.589 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class DogControllerTest]
+22:13:31.605 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+22:13:31.629 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+22:13:31.701 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [DogControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+22:13:31.736 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [DogControllerTest], using SpringBootContextLoader
+22:13:31.747 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [DogControllerTest]: class path resource [DogControllerTest-context.xml] does not exist
+22:13:31.748 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [DogControllerTest]: class path resource [DogControllerTestContext.groovy] does not exist
+22:13:31.748 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [DogControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:13:31.975 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [DogControllerTest]
+22:13:32.335 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [DogControllerTest]: using defaults.
+22:13:32.336 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:13:32.452 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@597514c8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1f015a74, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4b8af7b9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@48a91c94, org.springframework.test.context.support.DirtiesContextTestExecutionListener@390b921d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2c4cbdb2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@30e7a0bd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@30aa5789, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5554b0fb, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1c3c36ce, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@11d38fbc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@73a79410]
+22:13:32.461 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [DogControllerTest]
+22:13:32.464 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [DogControllerTest]
+22:13:32.466 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [DogControllerTest]
+22:13:32.467 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [DogControllerTest]
+22:13:32.482 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5f140921 testClass = DogControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@719416f7 testClass = DogControllerTest, locations = '{}', classes = '{class hello.Application, class hello.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e8512, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@592472e3, [ImportsContextCustomizer@1837ed59 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4f35a52d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@39b786fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@49302fc], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+22:13:32.486 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [DogControllerTest]
+22:13:32.486 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [DogControllerTest]
+22:13:32.555 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -121,56 +121,65 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.4.RELEASE)
 
-2019-06-16 15:01:57.954  INFO 15532 --- [    Test worker] DogControllerTest                        : Starting DogControllerTest on L8-IS-4X8GTN2 with PID 15532 (started by b0027 in C:\dev-tools\gradletest)
-2019-06-16 15:01:57.959  INFO 15532 --- [    Test worker] DogControllerTest                        : No active profile set, falling back to default profiles: default
-2019-06-16 15:02:00.271  INFO 15532 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-06-16 15:02:00.418  INFO 15532 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132ms. Found 2 repository interfaces.
-2019-06-16 15:02:01.267  INFO 15532 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$48c5e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-16 15:02:01.662  INFO 15532 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-06-16 15:02:02.069  INFO 15532 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-06-16 15:02:02.443  INFO 15532 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-06-19 22:13:33.816  INFO 8136 --- [    Test worker] DogControllerTest                        : Starting DogControllerTest on L8-IS-4X8GTN2 with PID 8136 (started by b0027 in C:\dev-tools\gradletest)
+2019-06-19 22:13:33.818  INFO 8136 --- [    Test worker] DogControllerTest                        : No active profile set, falling back to default profiles: default
+2019-06-19 22:13:36.847  INFO 8136 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-19 22:13:37.037  INFO 8136 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171ms. Found 2 repository interfaces.
+2019-06-19 22:13:38.086  INFO 8136 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$68070b94] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 22:13:38.773  INFO 8136 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-19 22:13:39.516  INFO 8136 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-19 22:13:39.752  INFO 8136 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-06-16 15:02:02.847  INFO 15532 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
-2019-06-16 15:02:02.853  INFO 15532 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-06-16 15:02:03.988  INFO 15532 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-06-16 15:02:05.235  INFO 15532 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-06-16 15:02:07.189  INFO 15532 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@53b7775d'
-2019-06-16 15:02:07.199  INFO 15532 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-06-16 15:02:10.004  INFO 15532 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-16 15:02:10.225  WARN 15532 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-06-16 15:02:11.503  INFO 15532 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2019-06-16 15:02:11.503  INFO 15532 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2019-06-16 15:02:11.541  INFO 15532 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 38 ms
-2019-06-16 15:02:12.004  INFO 15532 --- [    Test worker] DogControllerTest                        : Started DogControllerTest in 15.825 seconds (JVM running for 20.769)
-2019-06-16 15:02:12.147  INFO 15532 --- [    Test worker] hello.Application                        : 
-2019-06-16 15:02:12.197  INFO 15532 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2019-06-16 15:02:12.469  INFO 15532 --- [    Test worker] hello.Application                        : Customer{id=1, firstName='Anand', lastName='SK'}
-2019-06-16 15:02:12.469  INFO 15532 --- [    Test worker] hello.Application                        : Customer{id=2, firstName='Johnny', lastName='Papa'}
-2019-06-16 15:02:12.469  INFO 15532 --- [    Test worker] hello.Application                        : Customer{id=3, firstName='Pinky', lastName='Rocky'}
-2019-06-16 15:02:12.469  INFO 15532 --- [    Test worker] hello.Application                        : Customer{id=4, firstName='Sinkgid', lastName='First'}
-2019-06-16 15:02:12.470  INFO 15532 --- [    Test worker] hello.Application                        : Customer{id=5, firstName='Anand', lastName='Spring'}
-2019-06-16 15:02:12.470  INFO 15532 --- [    Test worker] hello.Application                        : findByLastName - &gt; SK 
-[Customer{id=1, firstName='Anand', lastName='SK'}]
-2019-06-16 15:02:12.538  INFO 15532 --- [    Test worker] hello.Application                        : findById
-2019-06-16 15:02:12.550  INFO 15532 --- [    Test worker] hello.Application                        : Customer{id=1, firstName='Anand', lastName='SK'}
-2019-06-16 15:02:12.550  INFO 15532 --- [    Test worker] hello.Application                        : findByfirstName -&gt; Anand
-2019-06-16 15:02:12.556  INFO 15532 --- [    Test worker] hello.Application                        : Dog Controller Test
-2019-06-16 15:02:12.568  INFO 15532 --- [    Test worker] hello.Application                        : findAll -&gt; Dogs
-[hello.Entities.Dog@18caa30d, hello.Entities.Dog@5abd08dc, hello.Entities.Dog@17a21a4d, hello.Entities.Dog@697e5487, hello.Entities.Dog@3b6bca8]
-[hello.Entities.Dog@18caa30d, hello.Entities.Dog@5abd08dc, hello.Entities.Dog@17a21a4d, hello.Entities.Dog@697e5487, hello.Entities.Dog@3b6bca8]
+2019-06-19 22:13:40.149  INFO 8136 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-06-19 22:13:40.155  INFO 8136 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-06-19 22:13:40.844  INFO 8136 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-19 22:13:41.826  INFO 8136 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-19 22:13:43.502  INFO 8136 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@61643528'
+2019-06-19 22:13:43.511  INFO 8136 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-19 22:13:47.666  INFO 8136 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-19 22:13:47.823  WARN 8136 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-19 22:13:50.246  INFO 8136 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-06-19 22:13:50.246  INFO 8136 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-06-19 22:13:50.288  INFO 8136 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 39 ms
+2019-06-19 22:13:50.364  INFO 8136 --- [    Test worker] DogControllerTest                        : Started DogControllerTest in 17.787 seconds (JVM running for 20.954)
+2019-06-19 22:13:50.565  INFO 8136 --- [    Test worker] hello.Application                        : 
+2019-06-19 22:13:50.617  INFO 8136 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-06-19 22:13:50.942  INFO 8136 --- [    Test worker] hello.Application                        : Customer{id=1, firstName='Anand', lastName='SK', dog=null}
+2019-06-19 22:13:50.943  INFO 8136 --- [    Test worker] hello.Application                        : Customer{id=2, firstName='Johnny', lastName='Papa', dog=null}
+2019-06-19 22:13:50.944  INFO 8136 --- [    Test worker] hello.Application                        : Customer{id=3, firstName='Pinky', lastName='Rocky', dog=null}
+2019-06-19 22:13:50.944  INFO 8136 --- [    Test worker] hello.Application                        : Customer{id=4, firstName='Sinkgid', lastName='First', dog=null}
+2019-06-19 22:13:50.944  INFO 8136 --- [    Test worker] hello.Application                        : Customer{id=5, firstName='Anand', lastName='Spring', dog=null}
+2019-06-19 22:13:50.944  INFO 8136 --- [    Test worker] hello.Application                        : findByLastName - &gt; SK 
+[Customer{id=1, firstName='Anand', lastName='SK', dog=null}]
+2019-06-19 22:13:51.038  INFO 8136 --- [    Test worker] hello.Application                        : findById
+2019-06-19 22:13:51.059  INFO 8136 --- [    Test worker] hello.Application                        : Customer{id=1, firstName='Anand', lastName='SK', dog=null}
+2019-06-19 22:13:51.059  INFO 8136 --- [    Test worker] hello.Application                        : findByfirstName -&gt; Anand
+2019-06-19 22:13:51.077  INFO 8136 --- [    Test worker] hello.Application                        : Dog Controller Test
+2019-06-19 22:13:51.106  INFO 8136 --- [    Test worker] hello.Application                        : findAll -&gt; Dogs
+[hello.Entities.Dog@79f169d1, hello.Entities.Dog@39e75cc5, hello.Entities.Dog@4baa15c9, hello.Entities.Dog@43b4290b, hello.Entities.Dog@466ba43b]
+[hello.Entities.Dog@79f169d1, hello.Entities.Dog@39e75cc5, hello.Entities.Dog@4baa15c9, hello.Entities.Dog@43b4290b, hello.Entities.Dog@466ba43b]
+Guuu
+Yeda
+Pandu
+Fizu
+Pashu
+2019-06-19 22:13:51.126  INFO 8136 --- [    Test worker] hello.Application                        : findByid -&gt; Dogs
+[hello.Entities.Dog@46ce2155]
+2019-06-19 22:13:51.136  INFO 8136 --- [    Test worker] hello.Application                        : findDogByAge
+[hello.Entities.Dog@78be9127]
 
 MockHttpServletRequest:
       HTTP Method = GET
-      Request URI = /
+      Request URI = /dogs/get-all-dogs
        Parameters = {}
           Headers = []
              Body = null
     Session Attrs = {}
 
 Handler:
-             Type = hello.Controller.HelloController
-           Method = public java.lang.String hello.Controller.HelloController.index()
+             Type = hello.Controller.DogController
+           Method = public org.springframework.http.ResponseEntity&lt;java.util.List&lt;hello.Entities.Dog&gt;&gt; hello.Controller.DogController.getDogs()
 
 Async:
     Async started = false
@@ -190,9 +199,9 @@ FlashMap:
 MockHttpServletResponse:
            Status = 200
     Error message = null
-          Headers = [Content-Type:&quot;text/plain;charset=UTF-8&quot;, Content-Length:&quot;27&quot;]
-     Content type = text/plain;charset=UTF-8
-             Body = Greetings from Spring Boot!
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;]
+     Content type = application/json;charset=UTF-8
+             Body = [{&quot;idDog&quot;:6,&quot;name&quot;:&quot;Guuu&quot;,&quot;age&quot;:13},{&quot;idDog&quot;:7,&quot;name&quot;:&quot;Yeda&quot;,&quot;age&quot;:15},{&quot;idDog&quot;:8,&quot;name&quot;:&quot;Pandu&quot;,&quot;age&quot;:16},{&quot;idDog&quot;:9,&quot;name&quot;:&quot;Fizu&quot;,&quot;age&quot;:17},{&quot;idDog&quot;:10,&quot;name&quot;:&quot;Pashu&quot;,&quot;age&quot;:18}]
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
@@ -244,7 +253,7 @@ MockHttpServletResponse:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.4</a> at Jun 16, 2019 3:02:14 PM</p>
+<a href="http://www.gradle.org">Gradle 4.4</a> at Jun 19, 2019 10:13:53 PM</p>
 </div>
 </div>
 </body>
