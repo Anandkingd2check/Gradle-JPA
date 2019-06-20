@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -33,6 +34,7 @@ public class DogController {
     DogRepository dogRepository;
 
     @RequestMapping(value="/get-by-id/{id}",method = RequestMethod.GET)
+    @CrossOrigin(origins = "http://localhost:3000")
     @ResponseBody
     public ResponseEntity<List<Dog>>findById(@PathVariable("id") Long id)  {
         List<Dog> dog= null;
@@ -49,6 +51,7 @@ public class DogController {
     }
 
     @RequestMapping(value="/get-by-age/{age}",method = RequestMethod.GET)
+    @CrossOrigin(origins = "http://localhost:3000")
     @ResponseBody
     public ResponseEntity<List<Dog>>findByAge(@PathVariable("age") Integer age)  {
         List<Dog> dog= null;
@@ -67,6 +70,7 @@ public class DogController {
 
     //@GetMapping
     @RequestMapping(value="/get-all-dogs",method = RequestMethod.GET)
+    @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity<List<Dog>> getDogs(){
         return (ResponseEntity.ok(dogsService.getDogs()));
     }
